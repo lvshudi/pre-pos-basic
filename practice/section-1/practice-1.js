@@ -1,5 +1,12 @@
 'use strict';
 
 function find(collection, element) {
-  return '实现练习要求，并改写该行代码。';
+  let result;
+  for(let i=0; i<collection.length; i++) {
+    if(collection[i]===element) {
+      result = collection[i];
+      return result;
+    }
+  }
+  result = "查无此数";
 }
